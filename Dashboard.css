@@ -1,0 +1,112 @@
+.navbar{
+    padding : 0px 20px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
+}
+.navbar h1{
+    margin-left: 40px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.navbar a{
+    background-color: white;
+    text-decoration: none;
+    color: black;
+    padding: 4px 8px;
+    border : none;
+    border-radius: 4px;
+    float: right;
+}
+.sidebar{
+    background-color: rgb(47, 144, 255);
+    padding-top: 70px;
+    position:relative;
+    left: 0;
+    max-width: 300px;
+    height:200%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease 0s;
+    overflow-x: hidden;
+}
+.sidebar img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+.sidebar ul {
+    list-style: none;
+}
+.sidebar ul li {
+    margin: 18px auto;
+    background-color:rgb(47, 144, 255);;
+    margin-left: -30px;
+    padding: 4px 20px;
+    max-width: 200px;
+    left: 0;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    transition: all 1s ease 0s;
+}
+.sidebar ul li:hover{
+    box-shadow: 0px 0px 10px rgb(47, 144, 255);
+    margin-left: 0px;
+}
+.sidebar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.navbar label {
+    z-index: 1;
+    position: fixed;
+    left: 16px;
+    color: white;
+    font-size: 20px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+#icon{
+    font-size: 20px;
+    transition:all 0.5s ease 0s;
+ }
+ #check {
+     display: none;
+ }
+ #check:checked ~ .sidebar{
+     left: -220px;
+ }
+ #check:checked ~.sidebar a span{
+    display: none;
+ }
+ #check:checked ~ .sidebar a i{
+     margin-left: 170px;
+ }
+ .footer{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    overflow-x: hidden;
+ }
+ .footer p{
+     margin: 6px 12px;
+ }
+ @media (max-width : 380px){
+     .navbar{
+         display: flex;
+         flex-direction: column;
+     }
+ }
+
+
+
